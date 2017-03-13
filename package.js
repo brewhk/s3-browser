@@ -2,7 +2,7 @@ Package.describe({
   name: 'brewhk:s3-browser',
   version: '0.0.1',
   summary: 'Easily upload images to S3 buckets from the browser',
-  git: '',
+  git: 'https://github.com/brewhk/s3-browser.git',
   documentation: 'README.md'
 });
 
