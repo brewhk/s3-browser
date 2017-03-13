@@ -10,14 +10,14 @@ Easily upload images to S3 buckets from the browser
 
 * Add settings for AWS in a `settings.json` as `aws`, **all** fields below are required:
 
-      "aws": {
+        "aws": {
           "accessKeyId": "GKIFJVRLZBSNXIC6WNIP",
           "policyValidityPeriod": 15,
           "s3": {
               "bucket": "bucketname",
               "region": "eu-west-1"
           }
-      },
+        },
 
   > Make sure not to put these details under `public`, as these settings only need to be accessed from the server
 
@@ -25,10 +25,10 @@ Easily upload images to S3 buckets from the browser
 
 * Pass the object URL and a prefix to `uploadBlobURIToS3`, which will return with a promise which resolves to the URL of the uploaded file on S3.
 
-      S3Browser.uploadBlobURIToS3(objectURL, "users/avatars/")
-        .then(function (url) {
-          // Do something with the URL. E.g. https://mybucket.s3.amazonaws.com/myfolder/afile.jpg
-        });
+        S3Browser.uploadBlobURIToS3(objectURL, "users/avatars/")
+          .then(function (url) {
+            // Do something with the URL. E.g. https://mybucket.s3.amazonaws.com/myfolder/afile.jpg
+          });
 
 ### API Reference
 
